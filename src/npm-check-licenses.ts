@@ -52,7 +52,7 @@ const pkginfo = require('../package.json')
     await dependencies.reduce((acc, dep) => {
       return acc.then(() => {
         licenseSpinner.text = dep
-        return npm.get(`${dep}/${jsonObj.dependencies[dep]}`).then((res) => {
+        return npm.get(`${encodeURIComponent(dep)}/${encodeURIComponent(jsonObj.dependencies[dep])}`).then((res) => {
           const lic = res.data.license || 'unknown'
           if (lic === 'unknown') {
             licenseSpinner.fail(`License Not Found: ${dep}`)
