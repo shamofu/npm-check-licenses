@@ -8,7 +8,6 @@
   "description": "Check what license you can apply.",
   "scripts": {
     "build": "tsc -p .",
-    "test": "yarn build",
     "lint": "tslint src/**/*"
   },
   "author": "sham",
