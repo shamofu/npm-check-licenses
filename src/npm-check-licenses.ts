@@ -42,9 +42,9 @@ const pkginfo = require('../package.json')
     dependencySpinner.succeed()
 
     const licenseSpinner = ora('Getting Licenses').start()
-    const api = 'https://api.npms.io/v2'
+    const api = 'https://registry.npmjs.org'
     const npm = axios.create({
-      baseURL: `${api}/package/`
+      baseURL: `${api}/`
     })
 
     const dependencies = Object.keys(jsonObj.dependencies)
@@ -52,8 +52,8 @@ const pkginfo = require('../package.json')
     await dependencies.reduce((acc, dep) => {
       return acc.then(() => {
         licenseSpinner.text = dep
-        return npm.get(dep).then((res) => {
-          const lic = res.data.collected.metadata.license || 'unknown'
+        return npm.get(`${dep}/${jsonObj.dependencies[dep]}`).then((res) => {
+          const lic = res.data.license || 'unknown'
           if (lic === 'unknown') {
             licenseSpinner.fail(`License Not Found: ${dep}`)
             licenses.push(lic)
