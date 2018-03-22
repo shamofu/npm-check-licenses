@@ -1,0 +1,21 @@
+language: node_js
+node_js: lts/*
+os: osx
+osx_image: xcode9.2
+install:
+- yarn install
+script:
+- yarn test
+before_deploy:
+- yarn install
+- yarn build
+deploy:
+  provider: npm
+  email: shamofu@gmail.com
+  api_key:
+    secure: KfCFtIY+oYEuU4PLmj+MtI4rF92hvKDFUVdlT5SV42kNyxCzedcvahaEszIPmPIA1O62dauenZBAc4/qj6Hc/04cmpd1ABRaMkcIbSvSHZmvYoBknevlJ+BlfjjyCVju44DPRp0xPeN+bKxFjb5kwsTGf8mfb7NLM4uaoTqYmUaaSOkHbgjzZWErqM+Ql7uTC5vQuHDE8Yq3OewruFg8u92gtWN68sVNcOxfzSt+toPyBuSkYXTDX1bFS7o26UC9uHJ6S93/GwVUkR9Bn1cfVyX9vo7o0TV3naSvubpaWJ4GR7pwXuRDAa2/aG/7Xni8LxInpBUg+ISo3CEJo5vuhsf/TuncHUPL8wsdSJoAFbKu8/b6Fd8mP/+DfHe2Gkc2alBZ8NUVURdBrVUkJxy1v2wCnpmWaJItQ8QDHbUi5p+abWmlqhJgOJGszvHb7dl7jsbqIhEaJErQYdo31tWpmC7RSWgr2amiUjK7spaig7jg1Io6qUTUqufrhZe+bD7ReGnoJtYltwplXO7iFqErJcAPZ1TnCpL/nD5d3IoejwcR4S7JKFFkW7v50FkvNBHTZyIuNN1MLkZ0844kG5EAGmCwpyRnbf8my+EHz5xUsKLO812ZNyjWIXpO6dv57GNB4MSjVZZHEgS9xPUdqj0gQrQcpLvT9Eljmq2rcODmG7Y=
+  skip_cleanup: true
+  on:
+    tags: true
+    repo: sham/npm-check-licenses
+    branch: master
