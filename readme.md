@@ -7,3 +7,5 @@ Check what license you can apply.
 
 # Usage
 In your package directory, just run `ncl` (shorthand for `npm-check-licenses`).
+
+Or you can run `ncl [path]` (path: a relative path to your package).
