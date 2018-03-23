@@ -24,6 +24,7 @@
     "axios": "^0.18.0",
     "commander": "^2.15.1",
     "is-online": "^7.0.0",
+    "is-relative": "^1.0.0",
     "ora": "^2.0.0",
     "shelljs": "^0.8.1",
     "spdx-correct": "^3.0.0",
