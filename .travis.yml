@@ -17,5 +17,5 @@ deploy:
   skip_cleanup: true
   on:
     tags: true
-    repo: sham/npm-check-licenses
+    repo: shamofu/npm-check-licenses
     branch: master

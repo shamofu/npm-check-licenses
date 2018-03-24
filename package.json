@@ -10,16 +10,16 @@
     "build": "tsc -p .",
     "lint": "tslint src/**/*"
   },
-  "author": "sham",
+  "author": "shamofu",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sham/npm-check-licenses.git"
+    "url": "git+https://github.com/shamofu/npm-check-licenses.git"
   },
   "bugs": {
-    "url": "https://github.com/sham/npm-check-licenses/issues"
+    "url": "https://github.com/shamofu/npm-check-licenses/issues"
   },
-  "homepage": "https://github.com/sham/npm-check-licenses#readme",
+  "homepage": "https://github.com/shamofu/npm-check-licenses#readme",
   "dependencies": {
     "axios": "^0.18.0",
     "commander": "^2.15.1",
