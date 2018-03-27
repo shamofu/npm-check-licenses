@@ -11,6 +11,13 @@
     "lint": "tslint src/**/*"
   },
   "author": "shamofu",
+  "keywords": [
+    "spdx",
+    "npm",
+    "check",
+    "license",
+    "package.json"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
