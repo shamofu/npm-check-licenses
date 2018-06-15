@@ -4,7 +4,7 @@
     "ncl": "bin/ncl.js",
     "npm-check-licenses": "bin/npm-check-licenses.js"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check what license you can apply.",
   "scripts": {
     "build": "tsc -p .",
