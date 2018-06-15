@@ -32,14 +32,14 @@
     "commander": "^2.15.1",
     "is-online": "^7.0.0",
     "is-relative": "^1.0.0",
-    "ora": "^2.0.0",
-    "shelljs": "^0.8.1",
+    "ora": "^2.1.0",
+    "shelljs": "^0.8.2",
     "spdx-correct": "^3.0.0",
     "spdx-expression-validate": "^1.0.2"
   },
   "devDependencies": {
-    "@types/node": "^9.4.7",
-    "tslint": "^5.9.1",
-    "typescript": "^2.7.2"
+    "@types/node": "^10.3.3",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2"
   }
 }
