@@ -64,7 +64,7 @@ let pathValue = ''
   await dependencies.reduce((acc, dep) => {
     return acc.then(() => {
       licenseSpinner.text = dep
-      return npm.get(`${dep.replace('/', '%2F')}/${jsonObj.dependencies[dep].replace('^', '%5E')}`).then((res) => {
+      return npm.get(`${dep.replace('/', '%2F')}/${jsonObj.dependencies[dep].replace('^', '')}`).then((res) => {
         const lic = res.data.license || 'unknown'
         if (lic === 'unknown') {
           licenseSpinner.fail(`License Not Found: ${dep}`)
