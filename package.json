@@ -8,6 +8,7 @@
   "description": "Check what license you can apply.",
   "scripts": {
     "build": "tsc -p .",
+    "test": "tsc -p . --noEmit",
     "lint": "tslint src/**/*"
   },
   "author": "shamofu",
@@ -29,17 +30,16 @@
   "homepage": "https://github.com/shamofu/npm-check-licenses#readme",
   "dependencies": {
     "axios": "^0.18.0",
-    "commander": "^2.15.1",
-    "is-online": "^7.0.0",
-    "is-relative": "^1.0.0",
-    "ora": "^2.1.0",
-    "shelljs": "^0.8.2",
-    "spdx-correct": "^3.0.0",
-    "spdx-expression-validate": "^1.0.2"
+    "commander": "^2.20.0",
+    "is-online": "^8.2.0",
+    "ora": "^3.4.0",
+    "shelljs": "^0.8.3",
+    "spdx-correct": "^3.1.0",
+    "spdx-expression-validate": "^2.0.0"
   },
   "devDependencies": {
-    "@types/node": "^10.3.3",
-    "tslint": "^5.10.0",
-    "typescript": "^2.9.2"
+    "@types/node": "^11.13.4",
+    "tslint": "^5.15.0",
+    "typescript": "^3.4.3"
   }
 }

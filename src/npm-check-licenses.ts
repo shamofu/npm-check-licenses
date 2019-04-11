@@ -2,7 +2,6 @@
 
 const fs = require('fs')
 const path = require('path')
-const isRelative = require('is-relative')
 const isOnline = require('is-online')
 const cli = require('commander')
 const shell = require('shelljs')
@@ -24,10 +23,6 @@ let pathValue = ''
   cli.parse(process.argv)
 
   const jsonSpinner = ora('Package Existence').start()
-  if (!isRelative(pathValue)) {
-    jsonSpinner.fail(`Package Existence (${pathValue} is not a relative path.)`)
-    shell.exit(1)
-  }
   const cd = process.cwd()
   const wd = pathValue ? path.join(cd, pathValue) : cd
   if (!fs.existsSync(`${wd}/package.json`)) {
