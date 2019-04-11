@@ -3,12 +3,12 @@ node_js: lts/*
 os: osx
 osx_image: xcode9.3
 install:
-- yarn install
+  - yarn install
 script:
-- yarn test
+  - yarn test
 before_deploy:
-- yarn install
-- yarn build
+  - yarn install
+  - yarn build
 deploy:
   provider: npm
   email: shamofu@gmail.com
