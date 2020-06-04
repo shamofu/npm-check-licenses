@@ -13,7 +13,7 @@ before_deploy:
   - yarn build
 deploy:
   provider: npm
-  email: shamofu@gmail.com
+  email: $EMAIL_ADDRESS
   api_key:
     secure: KBRdS8igh/+83DP25Up+p7+T0MqZL+ccBvbSZdVZu57Ge75pPyNhHCAQQp3S2MM2NEMxk9U7W3X9UpJoH0BLSEA2VLNTi9IfOlvXom8YJN0P965RN0IUMwCK9qM5e3J8zGNuDpfpKkVkUvm1mbvW4HsyzLlcceFG0oTKMbog3gFE+QR9v/SsZASJai7kp1ml+9sH5WTjihWBOtArZ3KyvCMt4ajiUbv7RpuvG9Is+0Wp7kofeHVsYwbEQqjOFKSo35Py+QKiZnxMc652Ldb6apbwWkHdegWO8w3BZqHr5DOIviZMk9IC8x0dBEOPtEfs6ffYdpZlS61kLOKO9JtBegW4HHQgezT9yT6aKSGMd1DbU9vUqjzw3nmKZS2UzXmiPgKMxq4LzWrU8UibiQAnJMbfduSTBhGZBH+4pIRkcm2IDMLlURgiCT3WZ78A0IcmUSV0c406+/NmYqLuwb/dDLBZv2QnuAcEwjw9UcZVvrmeHXSlgI96H4DGS0yjbfVGEGOlhB/IGbbaR1X92u1P3zVts+bXXawOTv806zaUEB0FGyAPKahAz3dFdWR73ay2L8jRTQtegHeV9KIZnvyAPXJhcBlsZ+kRH/o4qGG9D+1oXQzT/3zJpzl/ve8P5I7XcdkP62jqVACFL33nyZUhyt3HUBe7HE2vmyoohkJiI/I=
   skip_cleanup: true
