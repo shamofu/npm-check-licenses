@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-import './npm-check-licenses'
+import './npm-check-licenses.js'
