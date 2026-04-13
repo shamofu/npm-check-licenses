@@ -1,5 +1,6 @@
 /src
-/.travis.yml
+/.github
 /tsconfig.json
-/tslint.json
-/yarn.lock
+/eslint.config.js
+/vitest.config.ts
+/pnpm-lock.yaml
