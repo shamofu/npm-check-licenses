@@ -1,15 +1,21 @@
 {
   "name": "npm-check-licenses",
+  "version": "2.0.0",
+  "description": "Check what license you can apply.",
+  "type": "module",
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "bin": {
     "ncl": "bin/ncl.js",
     "npm-check-licenses": "bin/npm-check-licenses.js"
   },
-  "version": "1.0.5",
-  "description": "Check what license you can apply.",
   "scripts": {
     "build": "tsc -p .",
-    "test": "tsc -p . --noEmit",
-    "lint": "tslint src/**/*"
+    "typecheck": "tsc -p . --noEmit",
+    "test": "vitest run",
+    "lint": "eslint src"
   },
   "author": "shamofu",
   "keywords": [
@@ -29,17 +35,21 @@
   },
   "homepage": "https://github.com/shamofu/npm-check-licenses#readme",
   "dependencies": {
-    "axios": "^0.19.2",
-    "commander": "^5.1.0",
-    "is-online": "^8.4.0",
-    "ora": "^4.0.4",
-    "shelljs": "^0.8.4",
-    "spdx-correct": "^3.1.1",
+    "commander": "^14.0.3",
+    "is-online": "^12.0.2",
+    "ora": "^9.3.0",
+    "spdx-correct": "^3.2.0",
+    "spdx-expression-parse": "^4.0.0",
     "spdx-expression-validate": "^2.0.0"
   },
   "devDependencies": {
-    "@types/node": "^14.0.10",
-    "tslint": "^6.1.2",
-    "typescript": "^3.9.3"
+    "@types/node": "^25.6.0",
+    "@types/spdx-correct": "^3.1.3",
+    "@types/spdx-expression-parse": "^4.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.58.1",
+    "@typescript-eslint/parser": "^8.58.1",
+    "eslint": "^10.2.0",
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.4"
   }
 }

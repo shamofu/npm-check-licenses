@@ -1,0 +1,20 @@
+import tseslint from '@typescript-eslint/eslint-plugin'
+import tsparser from '@typescript-eslint/parser'
+
+export default [
+  {
+    files: ['src/**/*.ts'],
+    languageOptions: {
+      parser: tsparser,
+    },
+    plugins: {
+      '@typescript-eslint': tseslint,
+    },
+    rules: {
+      ...tseslint.configs.recommended.rules,
+      quotes: ['warn', 'single'],
+      semi: ['warn', 'never'],
+      'no-console': 'off',
+    },
+  },
+]
